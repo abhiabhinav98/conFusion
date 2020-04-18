@@ -75,6 +75,97 @@
         </div>
     </div>
 
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-3">
+                                <label>Number of Guests</label>
+                            </div>
+                            <div class="form-group col-sm-9">
+                                <div class="controls">
+                                    <label class="radio">
+                                      <input type="radio" name="seats" value="1">
+                                       &nbsp;1&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                       <input type="radio" name="seats" value="2">
+                                       &nbsp;&nbsp;2&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="seats" value="3">
+                                      &nbsp;&nbsp;3&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="seats" value="4">
+                                      &nbsp;&nbsp;4&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="seats" value="5">
+                                      &nbsp;&nbsp;5&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="seats" value="6">
+                                        &nbsp;&nbsp;6&nbsp;&nbsp;
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 col-sm-3">
+                                <label>Section</label>
+                            </div>
+                            <div class="col-12 col-sm-9">
+                                <div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-success btn-sm active">
+										<input type="radio" name="options" id="option1" autocomplete="off" checked> Non-smoking
+									</label>
+									<label class="btn btn-danger btn-sm">
+										<input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+									</label>
+								</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-3">
+                                <label>Date and Time</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                    </div>
+                                    <div class="col-sm col-md-4">
+                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <button type="button" class="btn btn-primary">Reserve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -86,13 +177,14 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#reserve"><button class="btn btn-warning btn-lg" data-toggle="tooltip" role="button"
-                        data-html="true" title="Or Call us at <br><strong>+919876543210</strong>" 
+                    <a data-toggle="modal" data-target="#reserveModal"><button class="btn btn-warning btn-lg" role="button"
                         data-placement="bottom">Reserve Table</button></a>
                 </div>
             </div>
         </div>
     </header>
+
+
 
     <div class="container">
 
@@ -185,61 +277,6 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center" id="reserve">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 col-sm align-self-center">
-                <div class="card">
-                    <div class="card-header bg-warning text-white"><font size="5"><strong>Reserve a Table</strong></font></div>
-                    <div class="card-body">
-                        <dl class="row">
-                            <dt class="col-sm-3">Number of Guests</dt>
-                            <dd class="col-sm-9">
-                                <div class="controls">
-                                    <label class="radio">
-                                      <input type="radio" name="one" value="1">
-                                       &nbsp;1&nbsp;&nbsp;
-                                    </label>
-                                    <label class="radio">
-                                       <input type="radio" name="two" value="2">
-                                       &nbsp;&nbsp;2&nbsp;&nbsp;
-                                    </label>
-                                    <label class="radio">
-                                      <input type="radio" name="three" value="3">
-                                      &nbsp;&nbsp;3&nbsp;&nbsp;
-                                    </label>
-                                    <label class="radio">
-                                      <input type="radio" name="four" value="4">
-                                      &nbsp;&nbsp;4&nbsp;&nbsp;
-                                    </label>
-                                    <label class="radio">
-                                      <input type="radio" name="five" value="5">
-                                      &nbsp;&nbsp;5&nbsp;&nbsp;
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="six" value="6">
-                                        &nbsp;&nbsp;6&nbsp;&nbsp;
-                                    </label>
-                                  </div>
-                            </dd>
-                            <dt class="col-sm-3">Date and Time</dt>
-                            <dd class="col-sm-9">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 col-md-4">
-                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-                                    </div>
-                                    <div class="col-sm col-md-4">
-                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                                    </div>
-                                </div>
-                            </dd>
-                        </dl>
-                        <button class="btn btn-primary" type="submit">Reserve</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
-
 
     </div>
 
@@ -288,11 +325,6 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function (){
-        $('[data-toggle="tooltip"]').tooltip();
-    })
-</script>
 </body>
 
 </html>

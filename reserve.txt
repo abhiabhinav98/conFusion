@@ -1,0 +1,54 @@
+<div class="row row-content align-items-center" id="reserve">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-sm align-self-center">
+                <div class="card">
+                    <div class="card-header bg-warning text-white"><font size="5"><strong>Reserve a Table</strong></font></div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-3">Number of Guests</dt>
+                            <dd class="col-sm-9">
+                                <div class="controls">
+                                    <label class="radio">
+                                      <input type="radio" name="one" value="1">
+                                       &nbsp;1&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                       <input type="radio" name="two" value="2">
+                                       &nbsp;&nbsp;2&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="three" value="3">
+                                      &nbsp;&nbsp;3&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="four" value="4">
+                                      &nbsp;&nbsp;4&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="five" value="5">
+                                      &nbsp;&nbsp;5&nbsp;&nbsp;
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="six" value="6">
+                                        &nbsp;&nbsp;6&nbsp;&nbsp;
+                                    </label>
+                                  </div>
+                            </dd>
+                            <dt class="col-sm-3">Date and Time</dt>
+                            <dd class="col-sm-9">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                    </div>
+                                    <div class="col-sm col-md-4">
+                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <button class="btn btn-primary" type="submit">Reserve</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
